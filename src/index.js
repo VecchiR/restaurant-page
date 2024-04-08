@@ -1,5 +1,5 @@
 import { loadHome } from "./home";
-import { loadAbout } from "./about";
+import { loadStore } from "./store";
 import { loadMenu } from "./menu";
 
 
@@ -17,8 +17,8 @@ tabs.forEach((btn) => btn.addEventListener('click', () => {
     else if (btn.classList.contains('menu')) {
         loadMenu();
     }
-    else if (btn.classList.contains('about')) {
-        loadAbout();
+    else if (btn.classList.contains('store')) {
+        loadStore();
     }
 }));
 
