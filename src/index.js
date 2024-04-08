@@ -1,4 +1,7 @@
 import { loadHome } from "./home";
+import { loadAbout } from "./about";
+import { loadMenu } from "./menu";
+
 
 console.log("heyoo - I'm coming from src/index.js");
 loadHome();
@@ -6,13 +9,22 @@ loadHome();
 
 const tabs = document.querySelectorAll('.tab-btn');
 tabs.forEach((btn) => btn.addEventListener('click', () => {
+    //aplicar um "check if tab = active" pra ver ser precisa carregar ou não ---------------------------------------------------
+    eraseContent();
     if (btn.classList.contains('home')) {
-        console.log('this is home');
+        loadHome();
     }
     else if (btn.classList.contains('menu')) {
-        console.log('this is menu');
+        loadMenu();
     }
     else if (btn.classList.contains('about')) {
-        console.log('this is about');
+        loadAbout();
     }
 }));
+
+function eraseContent() {
+    const content = document.querySelector('#content');
+    if(content.hasChildNodes()) {    
+        content.removeChild(content.firstChild);
+    }
+}
