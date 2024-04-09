@@ -31,7 +31,6 @@ function eraseContent() {
 
 function selectTab() { 
     if (!this.classList.contains('selected')) {
-        console.log('iranbitch');
         eraseContent();
         homeTab.classList.remove('selected');
         menuTab.classList.remove('selected');
