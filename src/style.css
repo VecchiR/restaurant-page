@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Paytone+One&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: min-content 0 1fr;
+}
+
+.logo {
+    font-family: 'Paytone One';
+    font-size: 100px;
+}
+
+nav button{
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 400;
+}
+
+header,
+nav {
+    display: grid;
+    place-content: center;
+}
+
+nav {
+    grid-auto-flow: column;
+}
+
+#content {
+    display: grid;
+    justify-content: center;
+}
+
+.image-container img {
+    position:fixed;
+    left: 68vw;
+    top: 25vh;
+    width: 700px;
+    z-index: -1;
+}
+
+.home-content {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 3fr 2fr;
+    font-size: 80px;
+    /* font-family:'Times New Roman', Times, serif; */
+    font-family: 'Montserrat';
+    font-weight: 200;
+}
+
+.headline {
+    display: grid;
+}
+
+.cool {
+    /* font-family: 'Montserrat'; */
+    font-weight: 900;
+}
