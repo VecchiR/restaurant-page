@@ -8,11 +8,11 @@ module.exports = {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
     },
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            title: 'Restaurant Page',
+            title: 'chill out.',
         }),
     ],
     module: {
