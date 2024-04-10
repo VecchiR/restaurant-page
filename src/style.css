@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Paytone+One&display=swap');
 
+* {
+    font-family: 'Montserrat';
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -9,13 +13,30 @@ body {
 
 .logo {
     font-family: 'Paytone One';
-    font-size: 100px;
+    font-size: 80px;
 }
 
 nav button{
-    font-family: 'Montserrat';
     font-size: 22px;
     font-weight: 400;
+    border: 0;
+    background-color: transparent;
+    margin-bottom: 4px;
+}
+
+nav button.selected {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    text-decoration-color: #0FDFBF;
+}
+
+nav button text {
+    padding: 40px;
+}
+
+header {
+    padding-top: 10px;
 }
 
 header,
@@ -26,11 +47,15 @@ nav {
 
 nav {
     grid-auto-flow: column;
+    margin-top: 30px;
+    column-gap: 10px;
 }
 
 #content {
     display: grid;
-    justify-content: center;
+    padding-left: 10vw;
+    padding-right: 30vw;
+    /* justify-content: center; */
 }
 
 .image-container img {
@@ -43,19 +68,92 @@ nav {
 
 .home-content {
     display: grid;
-    place-content: center;
-    grid-template-columns: 3fr 2fr;
+    align-content: center;
+    margin: 30px 0 30px;
     font-size: 80px;
-    /* font-family:'Times New Roman', Times, serif; */
-    font-family: 'Montserrat';
     font-weight: 200;
 }
 
-.headline {
+    .headline {
+        display: grid;
+    }
+
+    .cool {
+        font-weight: 900;
+    }
+
+.menu-content {
     display: grid;
+    font-size: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-right: 10vw;
+    margin-bottom: 20px;
+    margin-top: 150px;
 }
 
-.cool {
-    /* font-family: 'Montserrat'; */
-    font-weight: 900;
+.menu-content .subtitle {
+    font-weight: 600;
+    font-size: 20px;
+
 }
+
+.sizes-container table {
+    margin-top: 6px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
+.sizes-container,
+.flavor-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.store-content {
+    display: grid;
+    font-size: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+    margin-right: 10vw;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    align-items: start;
+    height: fit-content;
+    row-gap: 100px;
+}
+
+
+    .hours,
+    .contact-info,
+    .location {
+        display: grid;
+        grid-template-columns: max-content max-content;   
+    }
+
+    
+    .hours .title,
+    .contact-info .title,
+    .location .title {
+        grid-column: span 2;
+    }
+    
+    
+
+   

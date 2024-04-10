@@ -13,13 +13,13 @@ export function loadStore() {
 
     const hoursSpan = document.createElement('span');
     hoursSpan.setAttribute('class', 'title');
-    hoursSpan.innerHTML = 'Hours:';
+    hoursSpan.innerHTML = 'Hours';
     const contactSpan = document.createElement('span');
     contactSpan.setAttribute('class', 'title');
-    contactSpan.innerHTML = 'Contact Us:';
+    contactSpan.innerHTML = 'Contact Us';
     const locationSpan = document.createElement('span');
     locationSpan.setAttribute('class', 'title');
-    locationSpan.innerHTML = 'Location:';
+    locationSpan.innerHTML = 'Location';
 
     const hp1 = document.createElement('p');
     const hp2 = document.createElement('p');
