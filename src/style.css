@@ -156,4 +156,15 @@ nav {
     
     
 
-   
+   .store-content .subtitle {
+    margin-right: 16px;
+   }
+
+   .store-content p {
+    text-align: right;
+   }
+
+   .store-content .subtitle {
+    text-align: left;
+   }
+
